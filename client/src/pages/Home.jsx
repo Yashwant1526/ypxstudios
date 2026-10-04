@@ -10,25 +10,44 @@ export default function Home() {
       <section className="hero">
         <div className="container hero-grid">
           <div className="hero-copy">
-            <span className="eyebrow">Creative • Technology • Digital Solutions</span>
-            <h1>
-              {CONFIG.tagline}
-            </h1>
+            <span className="eyebrow">Strategy • Design • Digital Growth</span>
+            <h1>{CONFIG.tagline}</h1>
             <p className="lead">
-              YPX Studios helps founders, businesses, and creators turn their ideas into digital experiences that feel premium,
-              clear, and ready to convert.
+              YPX Studios helps businesses in Hubli and beyond stand out with premium branding, high-converting websites,
+              and content systems designed for trust, visibility, and real growth.
             </p>
 
             <div className="cta-row">
               <Link className="button button-primary" to="/enquiry">
-                Start a project
+                Book a discovery call
               </Link>
               <Link className="button button-secondary" to="/portfolio">
-                View portfolio
+                See our work
               </Link>
               <a className="button button-success" href={waLink()} target="_blank" rel="noreferrer noopener">
                 WhatsApp us
               </a>
+            </div>
+
+            <div className="pricing-strip" aria-label="Service pricing overview">
+              <div className="pricing-row">
+                <div className="price-item">
+                  <span>Video Editing</span>
+                  <strong>₹2,000+</strong>
+                </div>
+                <div className="price-item">
+                  <span>Graphic Design</span>
+                  <strong>₹3,000+</strong>
+                </div>
+                <div className="price-item">
+                  <span>Website</span>
+                  <strong>₹4,000+</strong>
+                </div>
+                <div className="price-item">
+                  <span>App Design</span>
+                  <strong>₹5,000+</strong>
+                </div>
+              </div>
             </div>
 
             <div className="stat-grid">
@@ -44,28 +63,28 @@ export default function Home() {
           <div className="hero-panel panel">
             <div className="mini-header">
               <span className="dot green" />
-              <span>Brand pipeline</span>
+              <span>YPX workflow</span>
             </div>
 
             <div className="pipeline-list">
               <div className="pipeline-row">
-                <span>Strategy</span>
-                <strong>Discovery</strong>
+                <span>01</span>
+                <strong>Strategy</strong>
               </div>
               <div className="pipeline-row">
-                <span>Design</span>
+                <span>02</span>
                 <strong>Brand + UX</strong>
               </div>
               <div className="pipeline-row">
-                <span>Launch</span>
-                <strong>Web + Reels</strong>
+                <span>03</span>
+                <strong>Launch + Growth</strong>
               </div>
             </div>
 
             <div className="tech-badges">
-              <span>Brand films</span>
-              <span>Web experiences</span>
-              <span>Creative systems</span>
+              <span>Brand identity</span>
+              <span>Web presence</span>
+              <span>Marketing assets</span>
             </div>
           </div>
         </div>
@@ -75,8 +94,8 @@ export default function Home() {
         <div className="container">
           <SectionHeader
             eyebrow="What we do"
-            title="Creative support designed for growth"
-            description="Web presence, motion content, branding, and digital assets built around business goals."
+            title="Creative systems built for real business growth"
+            description="From brand clarity to launch-ready digital experiences, we create work that helps businesses look sharper, feel more credible, and convert better."
             align="center"
           />
 
@@ -92,8 +111,8 @@ export default function Home() {
         <div className="container">
           <SectionHeader
             eyebrow="How we work"
-            title="Simple process, clear communication"
-            description="Every engagement is structured for momentum, clarity, and realistic business outcomes."
+            title="A practical process built for momentum"
+            description="Every project is shaped around business goals, audience clarity, and investment-friendly execution."
           />
 
           <div className="process-grid">
@@ -112,8 +131,8 @@ export default function Home() {
         <div className="container">
           <SectionHeader
             eyebrow="Client feedback"
-            title="People remember the experience"
-            description="We aim for clear strategy, premium design, and long-term value."
+            title="Work that feels credible and gets remembered"
+            description="Our focus is simple: practical strategy, premium execution, and digital experiences that help people trust your business."
             align="center"
           />
 

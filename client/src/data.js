@@ -1,25 +1,30 @@
 export const STATS = [
-  { label: "Projects delivered", value: "120+" },
-  { label: "Brand stories shaped", value: "42" },
-  { label: "Client satisfaction", value: "96%" },
+  { label: "Projects delivered", value: "130+" },
+  { label: "Brands launched", value: "48" },
+  { label: "Response time", value: "24 hrs" },
 ];
 
 export const PROCESS_STEPS = [
-  { title: "Discovery", text: "We clarify goals, audience, and the business outcome behind the work." },
-  { title: "Design & build", text: "We shape creative direction, UI/UX, and technical implementation." },
-  { title: "Launch & optimise", text: "We measure what matters and iterate for better conversion and reach." },
+  { title: "Understand the goal", text: "We learn your market, positioning, and what success should look like before we design anything." },
+  { title: "Shape the story", text: "We build the visual identity, messaging, and user experience around the real business problem." },
+  { title: "Launch with clarity", text: "We deliver polished assets, responsive web experiences, and content systems that are ready to perform." },
 ];
 
 export const TESTIMONIALS = [
   {
     quote:
-      "YPX Studios gave our business a sharper identity and a clearer digital story. The process felt strategic and polished.",
-    client: "Local business owner",
+      "YPX Studios helped us look more premium and communicate clearly. The website feels credible, polished, and much easier for people to trust.",
+    client: "Yashwant M V, Founder & Business Owner",
   },
   {
     quote:
-      "Their team translated complex ideas into a simple, premium online presence that customers remember.",
-    client: "Startup founder",
+      "From strategy to final visuals, the team was focused on results. The process was smooth, practical, and genuinely business-minded.",
+    client: "Yashwant M V, Founder & Business Owner",
+  },
+  {
+    quote:
+      "We needed a brand presence that felt modern without losing authenticity. YPX delivered that balance beautifully.",
+    client: "Yashwant M V, Founder & Business Owner",
   },
 ];
 
@@ -27,80 +32,66 @@ export const SERVICES = [
   {
     icon: "🎬",
     title: "Video Editing",
-    summary: "Reels, promos, ads, motion edits, and brand films built to stop the scroll.",
-    price: "From ₹6,500",
-    features: ["Short-form reels", "YouTube edits", "Ad cutdowns"],
+    summary: "Short-form edits, reels, promotional videos, and social media content designed to grab attention quickly.",
+    price: "From ₹2,000",
+    features: ["Reels edits", "Ad videos", "Short-form content"],
   },
   {
     icon: "🎨",
     title: "Graphic Design",
-    summary: "Visuals that make your brand feel polished, memorable, and consistently premium.",
-    price: "From ₹4,000",
-    features: ["Social creatives", "Brand graphics", "Marketing posts"],
-  },
-  {
-    icon: "🧭",
-    title: "Branding",
-    summary: "Identity systems, logo direction, and visual language for modern businesses.",
-    price: "From ₹12,000",
-    features: ["Logo design", "Brand kits", "Positioning support"],
+    summary: "Professional posters, creatives, and social media visuals that make your brand look polished and clear.",
+    price: "From ₹3,000",
+    features: ["Poster design", "Social creatives", "Marketing visuals"],
   },
   {
     icon: "💻",
     title: "Website Development",
-    summary: "Responsive websites and landing pages designed for trust, engagement, and conversion.",
-    price: "From ₹18,000",
-    features: ["Landing pages", "Corporate sites", "CMS builds"],
+    summary: "Responsive, modern websites and landing pages made to present your business professionally online.",
+    price: "From ₹4,000",
+    features: ["Business websites", "Landing pages", "Responsive design"],
   },
   {
     icon: "📱",
     title: "App Design",
-    summary: "Mobile-first product interfaces designed around clarity, usability, and experience.",
-    price: "From ₹15,000",
-    features: ["UI/UX screens", "App prototypes", "Product flows"],
-  },
-  {
-    icon: "📈",
-    title: "Digital Growth",
-    summary: "Strategic creative and content support to help your brand stay visible and relevant.",
-    price: "Custom package",
-    features: ["Content planning", "Campaign assets", "Performance support"],
+    summary: "Clean app screens and user-friendly interfaces that make your product feel simple, premium, and easy to use.",
+    price: "From ₹5,000",
+    features: ["Mobile UI", "App screens", "User flows"],
   },
 ];
 
 export const PROJECTS = [
   {
     id: 1,
-    category: "Branding",
-    title: "Retail brand refresh",
-    description: "Identity redesign and launch visuals for a modern retail business.",
-    url: "#",
-    icon: "🧭",
-  },
-  {
-    id: 2,
     category: "Website",
-    title: "Service landing page",
-    description: "Responsive website for lead generation and service discovery.",
+    title: "Business landing page",
+    description: "Modern online presence designed to build trust and attract new enquiries.",
     url: "#",
     icon: "💻",
   },
   {
-    id: 3,
+    id: 2,
     category: "Video",
-    title: "Product launch reel",
-    description: "Fast-moving promotional sequence for social media engagement and reach.",
+    title: "Product promo edit",
+    description: "Short-form video content created for stronger digital visibility and engagement.",
     url: "#",
     icon: "🎬",
   },
   {
-    id: 4,
-    category: "Marketing",
-    title: "Campaign creative set",
-    description: "A polished visual campaign built for promotion across channels.",
+    id: 3,
+    category: "Design",
+    title: "Creative campaign assets",
+    description: "Ads, posters, and promotional graphics crafted for consistent visual impact.",
     url: "#",
-    icon: "📣",
+    icon: "🎨",
+  },
+  {
+    id: 4,
+    category: "App",
+    title: "Mobile interface concept",
+    description: "Simple and premium app screens designed for better user experience and usability.",
+    url: "#",
+    icon: "📱",
   },
 ];
 
-export const CATEGORIES = ["All", "Branding", "Website", "Video", "Marketing"];
+export const CATEGORIES = ["All", "Website", "Video", "Design", "App"];

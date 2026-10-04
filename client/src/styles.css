@@ -153,6 +153,43 @@ main {
   gap: 0.9rem;
 }
 
+.pricing-strip {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 0.8rem;
+  box-shadow: var(--shadow);
+}
+
+.pricing-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.price-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.85rem 0.9rem;
+  background: rgba(29, 78, 216, 0.04);
+  border-radius: 14px;
+  border: 1px solid rgba(29, 78, 216, 0.08);
+}
+
+.price-item span {
+  color: var(--muted);
+  font-size: 0.73rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.price-item strong {
+  color: var(--primary-deep);
+  font-size: 1.02rem;
+}
+
 .button {
   display: inline-flex;
   justify-content: center;

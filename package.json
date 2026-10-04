@@ -5,8 +5,8 @@
   "scripts": {
     "install:client": "npm install --prefix client",
     "install:server": "npm install --prefix server",
-    "build": "npm run build --prefix client",
-    "start": "node server/server.js",
-    "dev": "node server/server.js"
+    "build": "npm install --prefix client && node -e \"const fs=require('fs'); const p='client/node_modules/.bin/vite'; try { fs.chmodSync(p, 0o755); } catch (err) {}\" && npm run build --prefix client",
+    "start": "npm install --prefix server && node server/server.js",
+    "dev": "npm install --prefix server && node server/server.js"
   }
 }
