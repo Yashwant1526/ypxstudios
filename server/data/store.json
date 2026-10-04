@@ -1,0 +1,38 @@
+{
+  "enquiries": [
+    {
+      "id": "d35e996b-28c7-4f7a-b923-0b12fb265f45",
+      "name": "Test Client",
+      "phone": "9876543210",
+      "email": "client@example.com",
+      "service": "Website",
+      "budget": "?20000",
+      "deadline": "2 weeks",
+      "details": "Need a premium landing page.",
+      "createdAt": "2026-10-04T10:08:00.037Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "category": "Branding",
+      "title": "Retail brand refresh",
+      "description": "Identity redesign and launch visuals for a modern retail business.",
+      "url": "#"
+    },
+    {
+      "id": 2,
+      "category": "Website",
+      "title": "Service landing page",
+      "description": "Responsive website for lead generation and service discovery.",
+      "url": "#"
+    },
+    {
+      "id": 3,
+      "category": "Video",
+      "title": "Product launch reel",
+      "description": "Fast-moving promotional sequence for social media engagement and reach.",
+      "url": "#"
+    }
+  ]
+}

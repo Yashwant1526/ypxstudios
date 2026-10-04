@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: ypx-studios-api
+    env: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_EMAIL
+        value: admin@ypxstudios.com
+      - key: ADMIN_PASSWORD
+        value: ChangeMe123!
+      - key: CORS_ORIGIN
+        value: https://your-frontend-domain.com
+
+  - type: static
+    name: ypx-studios-client
+    rootDir: client
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://your-api-domain.onrender.com/api
+      - key: VITE_APP_NAME
+        value: YPX Studios
+      - key: VITE_APP_URL
+        value: https://your-frontend-domain.com
