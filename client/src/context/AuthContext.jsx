@@ -1,7 +1,7 @@
 import { createContext, useContext, useMemo, useState } from "react";
 
 const AuthContext = createContext(null);
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:4000/api";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "/api";
 const adminEmail = import.meta.env.VITE_ADMIN_EMAIL || "admin@ypxstudios.com";
 
 export function AuthProvider({ children }) {

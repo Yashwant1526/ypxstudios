@@ -12,12 +12,13 @@ dotenv.config();
 const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const PORT = Number(process.env.PORT || 4000);
+const PORT = Number(process.env.PORT || 10000);
 const DATA_FILE = path.join(__dirname, "data", "store.json");
+const FRONTEND_DIST = path.join(__dirname, "..", "client", "dist");
 const JWT_SECRET = process.env.JWT_SECRET || "ypx-dev-secret";
 const ADMIN_EMAIL = (process.env.ADMIN_EMAIL || "admin@ypxstudios.com").toLowerCase();
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "ChangeMe123!";
-const CORS_ORIGIN = process.env.CORS_ORIGIN || "http://localhost:5173";
+const CORS_ORIGIN = process.env.CORS_ORIGIN || "*";
 
 function readStore() {
   try {
@@ -37,11 +38,15 @@ function writeStore(store) {
 
 app.use(
   cors({
-    origin: CORS_ORIGIN,
+    origin: CORS_ORIGIN === "*" ? true : CORS_ORIGIN,
     credentials: true,
   }),
 );
 app.use(express.json());
+
+if (fs.existsSync(FRONTEND_DIST)) {
+  app.use(express.static(FRONTEND_DIST));
+}
 
 app.get("/api/health", (req, res) => {
   res.json({ status: "ok", message: "YPX Studios API is running." });
@@ -146,6 +151,16 @@ app.get("/api/enquiries", requireAuth, (req, res) => {
   const store = readStore();
   res.json(store.enquiries || []);
 });
+
+if (fs.existsSync(FRONTEND_DIST)) {
+  app.get(/^\/(?!api).*/, (req, res, next) => {
+    if (req.path.startsWith("/api")) {
+      return next();
+    }
+
+    return res.sendFile(path.join(FRONTEND_DIST, "index.html"));
+  });
+}
 
 app.use((req, res) => {
   res.status(404).json({ message: "Route not found." });
