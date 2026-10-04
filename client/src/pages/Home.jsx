@@ -10,11 +10,10 @@ export default function Home() {
       <section className="hero">
         <div className="container hero-grid">
           <div className="hero-copy">
-            <span className="eyebrow">Strategy • Design • Digital Growth</span>
+            <span className="eyebrow">Video Editing • Graphic Design • Websites • Apps</span>
             <h1>{CONFIG.tagline}</h1>
             <p className="lead">
-              YPX Studios helps businesses in Hubli and beyond stand out with premium branding, high-converting websites,
-              and content systems designed for trust, visibility, and real growth.
+              YPX Studios helps businesses in Hubli and beyond stand out with clear messaging, modern visuals, and digital experiences built to look professional and convert attention into action.
             </p>
 
             <div className="cta-row">
@@ -90,12 +89,40 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section section-alt">
+        <div className="container studio-grid">
+          <div className="studio-spotlight panel">
+            <span className="small-label">Founded by</span>
+            <h3>Yashwant M V</h3>
+            <p>
+              A business-minded creative helping brands and founders build a stronger digital presence with practical,
+              affordable, and modern visual work.
+            </p>
+          </div>
+
+          <div className="studio-trust-grid">
+            <article className="trust-card panel">
+              <strong>Fast turnarounds</strong>
+              <p>Clear delivery timelines for businesses that need work done without delays.</p>
+            </article>
+            <article className="trust-card panel">
+              <strong>Business-first approach</strong>
+              <p>Every design and build decision is shaped around real customer value and clarity.</p>
+            </article>
+            <article className="trust-card panel">
+              <strong>Professional quality</strong>
+              <p>Modern layouts, stronger visuals, and polished outcomes that feel ready for the market.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="container">
           <SectionHeader
             eyebrow="What we do"
             title="Creative systems built for real business growth"
-            description="From brand clarity to launch-ready digital experiences, we create work that helps businesses look sharper, feel more credible, and convert better."
+            description="From video content and design to websites and app interfaces, we create digital experiences that help businesses look sharper, feel more credible, and connect better with customers."
             align="center"
           />
 

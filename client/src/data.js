@@ -13,17 +13,7 @@ export const PROCESS_STEPS = [
 export const TESTIMONIALS = [
   {
     quote:
-      "YPX Studios helped us look more premium and communicate clearly. The website feels credible, polished, and much easier for people to trust.",
-    client: "Yashwant M V, Founder & Business Owner",
-  },
-  {
-    quote:
-      "From strategy to final visuals, the team was focused on results. The process was smooth, practical, and genuinely business-minded.",
-    client: "Yashwant M V, Founder & Business Owner",
-  },
-  {
-    quote:
-      "We needed a brand presence that felt modern without losing authenticity. YPX delivered that balance beautifully.",
+      "We wanted a digital presence that felt modern, trustworthy, and genuinely professional. YPX Studios brought that vision to life with clarity, speed, and a strong creative eye.",
     client: "Yashwant M V, Founder & Business Owner",
   },
 ];
